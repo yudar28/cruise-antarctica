@@ -20,6 +20,25 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+let navButton = document.querySelector('.page-header__toggle');
+let navMain = document.querySelector('.main-nav');
+let header = document.querySelector('.page-header');
+let titlePage = document.querySelector('.main');
+let logo = document.querySelector('.page-header__logo');
+
+navButton.classList.remove('page-header__toggle--nojs');
+navMain.classList.remove('main-nav--nojs');
+logo.classList.remove('page-header__logo--nojs');
+
+navButton.addEventListener('click', function() {
+  navMain.classList.toggle('main-nav--open');
+  navButton.classList.toggle('page-header__toggle--close');
+  header.classList.toggle('page-header--open');
+  titlePage.classList.toggle('main--open');
+  logo.classList.toggle('page-header__logo--open');
+})
+
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

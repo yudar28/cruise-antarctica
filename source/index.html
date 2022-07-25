@@ -8,44 +8,51 @@
     <title>Круизы в Антарктику </title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
-      <a class="logo page-header__logo" href="#">
-        <svg width="70" height="38" viewBox="0 0 70 38">
-          <use xlink:href="img/sprite_auto.svg#logo"></use>
-        </svg>
-      </a>
-      <nav class="main-nav main-nav--nojs">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Преимущества</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Направления</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Ближайшие круизы</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <a class="logo page-header__logo page-header__logo--nojs" href="#">
+          <svg width="70" height="38" viewBox="0 0 70 38">
+            <use xlink:href="img/sprite_auto.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="page-header__toggle  page-header__toggle--nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="main-nav main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Преимущества</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Ближайшие круизы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
     </header>
 
     <main class="page-main">
       <section class="main">
-        <h1 class="main__title">Круизы в Антарктику </h1>
-        <p class="main__description">Волшебный мир айсбергов и пингвинов</p>
+        <div class="main__wrapper">
+          <h1 class="main__title">Круизы в Антарктику </h1>
+          <p class="main__description">Волшебный мир айсбергов и пингвинов</p>
+        </div>
       </section>
       <section class="about">
         <h2 class="about__title">Путешествие на край Земли</h2>
         <p class="about__description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
-        <picture>
-          <source media="(min-width: 1366px)" srcset="img/penguins-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/penguins-tablet.png">
-          <img class="about__img" src="img/penguins-mobile.png" width="290" height="186" alt="Три пингвина">
-        </picture>
+        <div class="about__picture">
+          <picture>
+            <source media="(min-width: 1366px)" srcset="img/penguins-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/penguins-tablet.png">
+            <img class="about__img" src="img/penguins-mobile.png" width="290" height="186" alt="Три пингвина">
+          </picture>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Преимущества</h2>
@@ -355,53 +362,55 @@
     </main>
     
     <footer class="page-footer">
-      <a class="logo page-footer__logo" href="#">
-        <svg width="70" height="38" viewBox="0 0 70 38">
-          <use xlink:href="img/sprite_auto.svg#logo"></use>
-        </svg>
-      </a>
-      <nav class="footer-nav">
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item">
-            <a class="footer-nav__link">Преимущества</a>
+      <div class="page-footer__wrapper">
+        <a class="logo page-footer__logo" href="#">
+          <svg width="70" height="38" viewBox="0 0 70 38">
+            <use xlink:href="img/sprite_auto.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link">Преимущества</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link">Направления</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link">Ближайшие круизы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__fb" width="11" height="20" viewbox="0 0 11 20">
+                <use xlink:href="img/sprite_auto.svg#facebook"></use>
+              </svg>
+              <span class="visually-hidden">facebook</span>
+            </a>
           </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link">Направления</a>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__instagram" width="20" height="20" viewbox="0 0 20 20">
+                <use xlink:href="img/sprite_auto.svg#instagram"></use>
+              </svg>
+              <span class="visually-hidden">instagram</span>
+            </a>
           </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link">Ближайшие круизы</a>
-          </li>
-          <li class="footer-nav__item">
-            <a class="footer-nav__link">Контакты</a>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__twitter" width="19" height="16" viewbox="0 0 19 16">
+                <use xlink:href="img/sprite_auto.svg#twitter"></use>
+              </svg>
+              <span class="visually-hidden">twitter</span>
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__fb" width="11" height="20" viewbox="0 0 11 20">
-              <use xlink:href="img/sprite_auto.svg#facebook"></use>
-            </svg>
-            <span class="visually-hidden">facebook</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__fb" width="20" height="20" viewbox="0 0 20 20">
-              <use xlink:href="img/sprite_auto.svg#instagram"></use>
-            </svg>
-            <span class="visually-hidden">instagram</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__fb" width="19" height="16" viewbox="0 0 19 16">
-              <use xlink:href="img/sprite_auto.svg#twitter"></use>
-            </svg>
-            <span class="visually-hidden">twitter</span>
-          </a>
-        </li>
-      </ul>
+      </div>
     </footer>
 
     <script src="js/vendor.min.js"></script>
