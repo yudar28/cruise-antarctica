@@ -5,12 +5,26 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (max-width: 767px) {
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/booking-bg-mobile@2x.png");
+        }
+    }
+
     @media (min-width: $vp-768) {
         background-image: url("../img/booking-bg-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/booking-bg-tablet@2x.png");
+        }
     }
 
     @media (min-width: $vp-1366) {
         background-image: url("../img/booking-bg-desktop.png");
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../img/booking-bg-desktop@2x.png");
+        }
     }
 }
 

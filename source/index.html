@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="туристический проект “Круизы в Антарктику”">
     <title>Круизы в Антарктику </title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
@@ -48,9 +49,12 @@
         <p class="about__description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
         <div class="about__picture">
           <picture>
-            <source media="(min-width: 1366px)" srcset="img/penguins-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/penguins-tablet.png">
-            <img class="about__img" src="img/penguins-mobile.png" width="290" height="186" alt="Три пингвина">
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/penguins-desktop.webp 1x, img/penguins-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/penguins-tablet.webp 1x, img/penguins-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/penguins-mobile.webp 1x, img/penguins-mobile@2x.webp 2x">
+            <source media="(min-width: 1366px)" srcset="img/penguins-desktop.png 1x, img/penguins-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/penguins-tablet.png 1x, img/penguins-tablet@2x.png 2x">
+            <img class="about__img" src="img/penguins-mobile.png" srcset="img/penguins-mobile@2x.png 2x" width="290" height="186" alt="Три пингвина">
           </picture>
         </div>
       </section>
@@ -88,9 +92,12 @@
         <ul class="catalog__list">
           <li class="catalog__item">
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png">
-                <img class="catalog__img" src="img/catalog/catalog-1-mobile.png" width="270" height="386" alt="Круиз “Астория”">
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.webp 1x, img/catalog/catalog-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
+                <img class="catalog__img" src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Астория”">
               </picture>
               <h3 class="catalog__subtitle">Круиз “Астория”</h3>
               <div class="catalog__wrapper">
@@ -117,9 +124,12 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png">
-              <img class="catalog__img" src="img/catalog/catalog-1-mobile.png" width="270" height="386" alt="Круиз “Элайн”">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.webp 1x, img/catalog/catalog-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Элайн”">
             </picture>
             <h3 class="catalog__subtitle">Круиз “Элайн”</h3>
             <div class="catalog__wrapper">
@@ -146,9 +156,12 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-3-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.png">
-              <img class="catalog__img" src="img/catalog/catalog-3-mobile.png" width="270" height="386" alt="Круиз “Атлантис“">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-3-desktop.webp 1x, img/catalog/catalog-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.webp 1x, img/catalog/catalog-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-3-mobile.webp 1x, img/catalog/catalog-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-3-desktop.png 1x, img/catalog/catalog-3-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.png 1x, img/catalog/catalog-3-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/catalog/catalog-3-mobile.png" srcset="img/catalog/catalog-3-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Атлантис“">
             </picture>
             <h3 class="catalog__subtitle">Круиз “Атлантис“</h3>
             <div class="catalog__wrapper">
@@ -175,9 +188,12 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-4-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.png">
-              <img class="catalog__img" src="img/catalog/catalog-4-mobile.png" width="270" height="386" alt="Круиз “Одиссей“">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-4-desktop.webp 1x, img/catalog/catalog-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.webp 1x, img/catalog/catalog-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-4-mobile.webp 1x, img/catalog/catalog-4-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-4-desktop.png 1x, img/catalog/catalog-4-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.png 1x, img/catalog/catalog-4-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/catalog/catalog-4-mobile.png" srcset="img/catalog/catalog-4-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Одиссей“">
             </picture>
             <h3 class="catalog__subtitle">Круиз “Одиссей“</h3>
             <div class="catalog__wrapper">
@@ -204,9 +220,12 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-5-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.png">
-              <img class="catalog__img" src="img/catalog/catalog-5-mobile.png" width="270" height="386" alt="Круиз “Олимпия“">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-5-desktop.webp 1x, img/catalog/catalog-5-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.webp 1x, img/catalog/catalog-5-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-5-mobile.webp 1x, img/catalog/catalog-5-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-5-desktop.png 1x, img/catalog/catalog-5-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.png 1x, img/catalog/catalog-5-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/catalog/catalog-5-mobile.png" srcset="img/catalog/catalog-5-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Олимпия“">
             </picture>
             <h3 class="catalog__subtitle">Круиз “Олимпия“</h3>
             <div class="catalog__wrapper">
@@ -233,9 +252,12 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-6-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/catalog/catalog-6-tablet.png">
-              <img class="catalog__img" src="img/catalog/catalog-6-mobile.png" width="270" height="386" alt="Круиз “Аврора“">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-6-desktop.webp 1x, img/catalog/catalog-6-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-6-tablet.webp 1x, img/catalog/catalog-6-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-6-mobile.webp 1x, img/catalog/catalog-6-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-6-desktop.png 1x, img/catalog/catalog-6-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-6-tablet.png 1x, img/catalog/catalog-6-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/catalog/catalog-6-mobile.png" srcset="img/catalog/catalog-6-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Аврора“">
             </picture>
             <h3 class="catalog__subtitle">Круиз “Аврора“</h3>
             <div class="catalog__wrapper">
@@ -262,9 +284,12 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-7-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/catalog/catalog-7-tablet.png">
-              <img class="catalog__img" src="img/catalog/catalog-7-mobile.png" width="270" height="386" alt="Круиз “Леонор“">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-7-desktop.webp 1x, img/catalog/catalog-7-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-7-tablet.webp 1x, img/catalog/catalog-7-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-7-mobile.webp 1x, img/catalog/catalog-7-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-7-desktop.png 1x, img/catalog/catalog-7-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-7-tablet.png 1x, img/catalog/catalog-7-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/catalog/catalog-7-mobile.png" srcset="img/catalog/catalog-7-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Леонор“">
             </picture>
             <h3 class="catalog__subtitle">Круиз “Леонор“</h3>
             <div class="catalog__wrapper">
@@ -291,9 +316,12 @@
           </li>
           <li class="catalog__item">
             <picture>
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-8-desktop.png">
-              <source media="(min-width: 768px)" srcset="img/catalog/catalog-8-tablet.png">
-              <img class="catalog__img" src="img/catalog/catalog-8-mobile.png" width="270" height="386" alt="Круиз “Минион - 1“">
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-8-desktop.webp 1x, img/catalog/catalog-8-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-8-tablet.webp 1x, img/catalog/catalog-8-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-8-mobile.webp 1x, img/catalog/catalog-8-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-8-desktop.png 1x, img/catalog/catalog-8-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-8-tablet.png 1x, img/catalog/catalog-8-tablet@2x.png 2x">
+              <img class="catalog__img" src="img/catalog/catalog-8-mobile.png" srcset="img/catalog/catalog-8-mobile@2x.png 2x" width="270" height="386" alt="Круиз “Минион - 1“">
             </picture>
             <h3 class="catalog__subtitle">Круиз “Минион - 1“</h3>
             <div class="catalog__wrapper">
@@ -346,7 +374,7 @@
               <label class="booking__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="politics" id="politics" checked>
                 <span class="control__mark"></span>
-                <p class="control__label">Я согласен на обработку моих персональных данных</p>
+                <span class="control__label">Я согласен на обработку моих персональных данных</span>
               </label>
               <button class="booking__button" type="submit">Оставить заявку</button>
             </fieldset>
