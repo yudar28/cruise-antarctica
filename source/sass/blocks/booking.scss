@@ -166,10 +166,11 @@
         line-height: 150%;
         color: rgba(1, 28, 64, 0.7);
     }
+}
 
-    &:invalid {
-        border: 1px solid #ff0000;
-    }
+.booking__input:focus:invalid {
+    border: 2px solid #ff0000;
+    outline: none;
 }
 
 .booking__control  {
