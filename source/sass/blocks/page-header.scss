@@ -10,9 +10,12 @@
         position: absolute;
         left: 35px;
         top: 0;
+        z-index: 2;
+        height: 100vh;
 
         display: grid;
         grid-template-columns: 1fr 16px;
+        grid-template-rows: 66px 1fr;
 
         width: calc(100% - 35px);
 
@@ -27,6 +30,21 @@
         margin: 0 auto;
         width: $vp-1160;
     }  
+}
+
+.page-header--open .page-header__main-nav {
+    align-self: start;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -35px;
+        width: 35px;
+        height: 100vh;
+        background: rgba(0, 43, 102, 0.5);
+        z-index: 0;
+    }
 }
 
 .page-header__logo {
