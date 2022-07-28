@@ -12,7 +12,7 @@
     }
 }
 
-.catalog__title {
+.catalog h2 {
     margin: 0;
     margin-bottom: 40px;
 
@@ -75,7 +75,7 @@
     }
 }
 
-.catalog__img {
+.catalog__item img {
     background-color: #00306b;
 
     @media (min-width: $vp-768) {
@@ -88,7 +88,7 @@
     }
 }
 
-.catalog__subtitle {
+.catalog__item h3 {
     position: absolute;
     left: 25px;
     bottom: 25px;
@@ -123,7 +123,7 @@
     display: block;
 }
 
-.catalog__item:hover .catalog__subtitle {
+.catalog__item:hover h3 {
     top: 30px;
 
     @media (min-width: $vp-768) {
@@ -153,7 +153,7 @@
     margin-bottom: 15px;
 }
 
-.catalog__info-title {
+.catalog__info-item  h4{
     margin: 0;
     margin-bottom: 5px;
 
@@ -162,7 +162,7 @@
     line-height: 140%;
 }
 
-.catalog__info-description {
+.catalog__info-item p {
     margin: 0;
 
     font-weight: 400;

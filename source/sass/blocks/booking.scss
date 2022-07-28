@@ -46,7 +46,7 @@
     }
 }
 
-.booking__title {
+.booking__wrapper h2 {
     margin: 0;
     margin-bottom: 25px;
 
@@ -72,7 +72,7 @@
     }
 }
 
-.booking__description {
+.booking__container p {
     margin: 0;
     margin-bottom: 40px;
 
@@ -98,7 +98,7 @@
     }
 }
 
-.booking__description br {
+.booking__container p br {
     @media (min-width: $vp-768) {
         display: none;
     }
@@ -125,7 +125,7 @@
     }
 }
 
-.booking__text {
+.booking__form p {
     margin: 0;
     margin-bottom: 35px;
 
@@ -140,7 +140,7 @@
     }
 }
 
-.booking__text br {
+.booking__form p br {
     @media (min-width: $vp-768) {
         display: none;
     }
@@ -163,7 +163,7 @@
     margin-bottom: 20px;
 }
 
-.booking__input {
+.booking__item input {
     width: 100%;
     padding: 11px 16px;
     border: none;
@@ -182,7 +182,7 @@
     }
 }
 
-.booking__input:focus:invalid {
+.booking__item input:focus:invalid {
     border: 2px solid #ff0000;
     outline: none;
 }

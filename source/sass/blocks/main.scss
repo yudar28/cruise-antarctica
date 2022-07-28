@@ -11,7 +11,7 @@
     &--open  {
         margin-top: 0; 
     }
-    
+
     @media (max-width: 767px) {
         @media (min-resolution: 2dppx) {
             background-image: url("../img/iceberg-mobile@2x.png");
@@ -56,7 +56,7 @@
     }
 }
 
-.main__title {
+.main__wrapper h1 {
     margin: 0;
     padding-top: 185px;
 
@@ -80,7 +80,7 @@
     }
 }
 
-.main__description {
+.main__wrapper p {
     margin: 0;
     padding-top: 25px;
 

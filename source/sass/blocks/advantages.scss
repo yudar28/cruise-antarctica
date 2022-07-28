@@ -42,7 +42,7 @@
     }
 }
 
-.advantages__title {
+.advantages__wrapper h2 {
     margin: 0;
     margin-bottom: 40px;
 
@@ -101,7 +101,6 @@
 }
 
 .advantages__svg {
-    // margin-bottom: 25px;
 
     @media (max-width: 1365px) {
         &--ship {
@@ -121,9 +120,8 @@
     }
 }
 
-.advantages__subtitle {
+.advantages__item h3 {
     margin: 0;
-    // margin-bottom: 20px;
 
     font-weight: 500;
     font-size: 18px;
@@ -136,7 +134,7 @@
     }
 }
 
-.advantages__description {
+.advantages__item p {
     margin: 0;
 
     grid-row: 5/6;
