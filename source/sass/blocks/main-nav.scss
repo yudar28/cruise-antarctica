@@ -1,72 +1,79 @@
 .main-nav {
     color: $color-text-white;
-    display: none;
 
-    &--nojs {
-        position: static;
-        display: block;
-        margin-bottom: 69px;
-    }
+    @media (max-width: 767px) {
+        display: none;
 
-    &--open {
-        display: block;
-    }
+        &--nojs {
+            position: static;
+            display: block;
+            margin-bottom: 69px;
+        }
 
-    @media (min-width: $vp-768) {
-        display: block;
+        &--open {
+            display: block;
+        }
     }
 }
 
 .main-nav__list {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
     list-style-type: none;
 
-    @media (min-width: $vp-768) {
-        display: flex;
-        padding: 35px 0;
+    @media (max-width: 1365px) {
+        margin: 0;
     }
 
-    @media (min-width: $vp-1366) {
-        margin-left: 33px;
+    @media (max-width: 767px) {
+        display: block;
     }
 }
 
 .main-nav__item {
-    @media (min-width: $vp-768) {
+    margin-left: 33px;
+
+    @media (max-width: 1365px) {
         margin-left: 23px;
     }
 
-    @media (min-width: $vp-1366) {
-        margin-left: 33px;
+    @media (max-width: 767px) {
+        margin-left: 0;
     }
 }
 
 .main-nav__item a {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: $color-text-blue;
+    padding: 48px 0;
 
-    @media (min-width: $vp-768) {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $color-text-white;
+
+    @media (max-width: 1365px) {
         padding: 35px 0;
 
         font-size: 14px;
         line-height: 17px;
-        color: $color-text-white;
     }
 
-    @media (min-width: $vp-1366) {
-        padding: 48px 0;
-
-        font-size: 16px;
-        line-height: 20px;
+    @media (max-width: 767px) {
+        padding: 0;
+        font-size: 18px;
+        line-height: 22px;
+        color: $color-text-blue;
     }
 }
 
 .main-nav--open .main-nav__list {
-    padding-left: 10px;
-    padding-bottom: 220px;
+    @media (max-width: 767px) {
+        padding-left: 10px;
+        padding-bottom: 220px;
+    }
 }
 
 .main-nav--nojs .main-nav__list {
@@ -75,6 +82,8 @@
 
 .main-nav--open a,
 .main-nav--nojs a {
-    display: block;
-    padding-top: 28px;
+    @media (max-width: 767px) {
+        display: block;
+        padding-top: 28px;
+    }
 }

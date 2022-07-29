@@ -1,46 +1,49 @@
 .about {
-    padding: 65px 15px;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 120px 0;
 
-    @media (min-width: $vp-768) {
+    display: grid;
+    grid-template-areas: "title img"
+                        "des img";
+    grid-template-columns: 512px 560px;
+    column-gap: 88px;
+
+    @media (max-width: 1365px) {
+        width: 100%;
         padding: 100px 45px;
 
-        display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
-        grid-template-areas: "title img"
-                            "des img";
     }
 
-    @media (min-width: $vp-1366) {
-        width: 1160px;
-        margin: 0 auto;
-        padding: 120px 0;
-
-        grid-template-columns: 512px 560px;
-        column-gap: 88px;
+    @media (max-width: 767px) {
+        display: block;
+        padding: 65px 15px;
     }
 }
 
 .about h2 {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    padding: 0;
 
     font-weight: 600;
-    font-size: 24px;
-    line-height: 140%;
+    font-size: 28px;
+    line-height: 150%;
 
-    @media (min-width: $vp-768) {
+    align-self: end;
+    grid-area: title;
+
+    @media (max-width: 1365px) {
+        margin-bottom: 30px;
         padding-right: 100px;
         font-size: 26px;
-        grid-area: title;
+        line-height: 140%;
     }
 
-    @media (min-width: $vp-1366) {
-        padding-right: 0;
-        font-size: 28px;
-        line-height: 150%;
-
-        align-self: end;
+    @media (max-width: 767px) {
+        font-size: 24px; 
     }
 }
 
@@ -51,29 +54,29 @@
     font-size: 16px;
     line-height: 150%;
 
+    grid-area: des;
+
     @media (max-width: 767px) {
         margin-bottom: 40px;
-    }
-
-    @media (min-width: $vp-768) {
-        grid-area: des;
     }
 }
 
 .about__picture {
-    @media (min-width: $vp-768) {
-        grid-area: img;
+    grid-area: img;
+
+    @media (max-width: 1365px) {
+        margin: 0 auto;
     }
 }
 
 .about__picture img {
-    @media (min-width: $vp-768) {
+    @media (max-width: 1365px) {
         width: 324px;
         height: 264px;
     }
 
-    @media (min-width: $vp-1366) {
-        width: 560px;
-        height: 301px;
+    @media (max-width: 767px) {
+        width: 290px;
+        height: 186px;
     }
 }

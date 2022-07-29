@@ -23,20 +23,39 @@ window.addEventListener('DOMContentLoaded', () => {
 let navButton = document.querySelector('.page-header__toggle');
 let navMain = document.querySelector('.main-nav');
 let header = document.querySelector('.page-header');
-let titlePage = document.querySelector('.main');
 let logo = document.querySelector('.page-header__logo');
+let body = document.querySelector('.page-body');
+let navItems = document.querySelectorAll('.main-nav__link-js');
 
 navButton.classList.remove('page-header__toggle--nojs');
 navMain.classList.remove('main-nav--nojs');
 logo.classList.remove('page-header__logo--nojs');
 
-navButton.addEventListener('click', function() {
+const onMenuOpen = () => {
   navMain.classList.toggle('main-nav--open');
   navButton.classList.toggle('page-header__toggle--close');
   header.classList.toggle('page-header--open');
-  titlePage.classList.toggle('main--open');
   logo.classList.toggle('page-header__logo--open');
+  body.classList.toggle('page-body--opened-menu');
+}
+
+const onMenuClose = () => {
+  navMain.classList.remove('main-nav--open');
+  navButton.classList.remove('page-header__toggle--close');
+  header.classList.remove('page-header--open');
+  logo.classList.remove('page-header__logo--open');
+  body.classList.remove('page-body--opened-menu');
+}
+
+navButton.addEventListener('click', () => {
+  onMenuOpen();
 })
+
+navItems.forEach((navItem) => {
+  navItem.addEventListener('click', () => {
+    onMenuClose();
+  })
+});
 
 
 // ---------------------------------

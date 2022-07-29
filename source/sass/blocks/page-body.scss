@@ -9,4 +9,8 @@
     color: $color-text-blue;
 
     scroll-behavior: smooth;
+
+    &--opened-menu {
+        overflow: hidden;
+    }
 }
