@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="туристический проект “Круизы в Антарктику”">
+    <title>Круизы в Антарктику </title>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+        <a class="logo page-header__logo page-header__logo--nojs">
+          <svg width="70" height="38" viewBox="0 0 70 38">
+            <use xlink:href="img/sprite_auto.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="page-header__toggle  page-header__toggle--nojs" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="page-header__main-nav main-nav main-nav--nojs">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link-js" href="#advantages">Преимущества</a> <!-- Класс main-nav__link-js для js -->
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link-js" href="#catalog">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link-js" href="#booking">Ближайшие круизы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link-js" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="main">
+        <div class="main__wrapper">
+          <h1>Круизы в&nbsp;Антарктику</h1>
+          <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
+        </div>
+      </section>
+      <section class="about">
+        <h2>Путешествие на&nbsp;край Земли</h2>
+        <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+        <div class="about__picture">
+          <picture>
+            <source type="image/webp" media="(min-width: 1366px)" srcset="img/penguins-desktop.webp 1x, img/penguins-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/penguins-tablet.webp 1x, img/penguins-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/penguins-mobile.webp 1x, img/penguins-mobile@2x.webp 2x">
+            <source media="(min-width: 1366px)" srcset="img/penguins-desktop.png 1x, img/penguins-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/penguins-tablet.png 1x, img/penguins-tablet@2x.png 2x">
+            <img src="img/penguins-mobile.png" srcset="img/penguins-mobile@2x.png 2x" width="560" height="301" alt="Три пингвина">
+          </picture>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="advantages__wrapper">
+          <h2>Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__container">
+                <svg class="advantages__svg advantages__svg--ship" width="27" height="32" viewBox="0 0 27 32">
+                  <use xlink:href="img/sprite_auto.svg#ship"></use>
+                </svg>
+              </div>
+              <h3>Небольшой круизный лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__container">
+                <svg class="advantages__svg advantages__svg--all-include" width="38" height="21" viewBox="0 0 38 21">
+                  <use xlink:href="img/sprite_auto.svg#all-include"></use>
+                </svg>
+              </div>
+              <h3>Система все&nbsp;включено</h3>
+              <p>Все наши круизы работают по&nbsp;системе &laquo;Все &laquo;Включено&raquo;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__container">
+                <svg class="advantages__svg advantages__svg--tour" width="42" height="15" viewBox="0 0 42 15">
+                  <use xlink:href="img/sprite_auto.svg#tour"></use>
+                </svg>
+              </div>
+              <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog" id="catalog">
+        <h2>Ближайшие круизы</h2>
+        <ul class="catalog__list">
+          <li tabindex="0" class="catalog__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.webp 1x, img/catalog/catalog-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile@2x.webp 2x">
+                <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
+                <img src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" width="260" height="386" alt="Айсберг и замерзшее море”">
+              </picture>
+              <h3>Круиз “Астория”</h3>
+              <div class="catalog__wrapper">
+                <ul class="catalog__info-list">
+                  <li class="catalog__info-item">
+                    <h4>Маршрут</h4>
+                    <p>Аргентина - Фолклендские острова - Антарктида</p>
+                  </li>
+                  <li class="catalog__info-item">
+                    <h4>Порт отправления</h4>
+                    <p>Ушуайя</p>
+                  </li>
+                  <li class="catalog__info-item">
+                    <h4>Продолжительность</h4>
+                    <p>11 дней</p>
+                  </li>
+                  <li class="catalog__info-item">
+                    <h4>Цена</h4>
+                    <p>от&nbsp;11500&nbsp;$</p>
+                  </li>
+                </ul>
+                <a tabindex="0" href="#">Забронировать</a>
+              </div>
+          </li>
+          <li tabindex="0" class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.webp 1x, img/catalog/catalog-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
+              <img src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" width="260" height="386" alt="Айсберг и замерзшее море">
+            </picture>
+            <h3>Круиз “Элайн”</h3>
+            <div class="catalog__wrapper">
+              <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Порт отправления</h4>
+                  <p>Буэнос-Айрес</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Продолжительность</h4>
+                  <p>20 дней</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Цена</h4>
+                  <p>от&nbsp;14500&nbsp;$</p>
+                </li>
+              </ul>
+              <a href="#">Забронировать</a>
+            </div>
+          </li>
+          <li tabindex="0" class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-3-desktop.webp 1x, img/catalog/catalog-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.webp 1x, img/catalog/catalog-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-3-mobile.webp 1x, img/catalog/catalog-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-3-desktop.png 1x, img/catalog/catalog-3-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.png 1x, img/catalog/catalog-3-tablet@2x.png 2x">
+              <img src="img/catalog/catalog-3-mobile.png" srcset="img/catalog/catalog-3-mobile@2x.png 2x" width="260" height="386" alt="Небольшие айсберги, плавающие в море">
+            </picture>
+            <h3>Круиз “Атлантис“</h3>
+            <div class="catalog__wrapper">
+              <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Порт отправления</h4>
+                  <p>Ушуайя</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Продолжительность</h4>
+                  <p>15 дней</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Цена</h4>
+                  <p>от&nbsp;14500&nbsp;$</p>
+                </li>
+              </ul>
+              <a href="#">Забронировать</a>
+            </div>
+          </li>
+          <li tabindex="0" class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-4-desktop.webp 1x, img/catalog/catalog-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.webp 1x, img/catalog/catalog-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-4-mobile.webp 1x, img/catalog/catalog-4-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-4-desktop.png 1x, img/catalog/catalog-4-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.png 1x, img/catalog/catalog-4-tablet@2x.png 2x">
+              <img src="img/catalog/catalog-4-mobile.png" srcset="img/catalog/catalog-4-mobile@2x.png 2x" width="260" height="386" alt="Большой ледник на фоне голубого неба с перистыми облаками">
+            </picture>
+            <h3>Круиз “Одиссей“</h3>
+            <div class="catalog__wrapper">
+              <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <h4>Маршрут</h4>
+                  <p>Чили - Антарктида</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Порт отправления</h4>
+                  <p>Пунта-Аренас</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Продолжительность</h4>
+                  <p>13 дней</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Цена</h4>
+                  <p>от&nbsp;9700&nbsp;$</p>
+                </li>
+              </ul>
+              <a href="#">Забронировать</a>
+            </div>
+          </li>
+          <li tabindex="0" class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-5-desktop.webp 1x, img/catalog/catalog-5-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.webp 1x, img/catalog/catalog-5-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-5-mobile.webp 1x, img/catalog/catalog-5-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-5-desktop.png 1x, img/catalog/catalog-5-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.png 1x, img/catalog/catalog-5-tablet@2x.png 2x">
+              <img src="img/catalog/catalog-5-mobile.png" srcset="img/catalog/catalog-5-mobile@2x.png 2x" width="260" height="386" alt="Стая пингвинов на фоне айсберга">
+            </picture>
+            <h3>Круиз “Олимпия“</h3>
+            <div class="catalog__wrapper">
+              <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Порт отправления</h4>
+                  <p>Ушуайя</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Продолжительность</h4>
+                  <p>21 день</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Цена</h4>
+                  <p>от&nbsp;18600&nbsp;$</p>
+                </li>
+              </ul>
+              <a href="#">Забронировать</a>
+            </div>
+          </li>
+          <li tabindex="0" class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-6-desktop.webp 1x, img/catalog/catalog-6-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-6-tablet.webp 1x, img/catalog/catalog-6-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-6-mobile.webp 1x, img/catalog/catalog-6-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-6-desktop.png 1x, img/catalog/catalog-6-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-6-tablet.png 1x, img/catalog/catalog-6-tablet@2x.png 2x">
+              <img src="img/catalog/catalog-6-mobile.png" srcset="img/catalog/catalog-6-mobile@2x.png 2x" width="260" height="386" alt="Расстаявшая часть ледника и море">
+            </picture>
+            <h3>Круиз “Аврора“</h3>
+            <div class="catalog__wrapper">
+              <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Антарктида - Чили</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Порт отправления</h4>
+                  <p>Ушуайя</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Продолжительность</h4>
+                  <p>14 дней</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Цена</h4>
+                  <p>от&nbsp;11700&nbsp;$</p>
+                </li>
+              </ul>
+              <a href="#">Забронировать</a>
+            </div>
+          </li>
+          <li tabindex="0" class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-7-desktop.webp 1x, img/catalog/catalog-7-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-7-tablet.webp 1x, img/catalog/catalog-7-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-7-mobile.webp 1x, img/catalog/catalog-7-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-7-desktop.png 1x, img/catalog/catalog-7-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-7-tablet.png 1x, img/catalog/catalog-7-tablet@2x.png 2x">
+              <img src="img/catalog/catalog-7-mobile.png" srcset="img/catalog/catalog-7-mobile@2x.png 2x" width="260" height="386" alt="Парусная лодка в море около ледника">
+            </picture>
+            <h3>Круиз “Леонор“</h3>
+            <div class="catalog__wrapper">
+              <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <h4>Маршрут</h4>
+                  <p>Чили - Южная Георгия - Антарктида - Аргентина</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Порт отправления</h4>
+                  <p>Пунта-Аренас</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Продолжительность</h4>
+                  <p>17 дней</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Цена</h4>
+                  <p>от&nbsp;12500&nbsp;$</p>
+                </li>
+              </ul>
+              <a href="#">Забронировать</a>
+            </div>
+          </li>
+          <li tabindex="0" class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-8-desktop.webp 1x, img/catalog/catalog-8-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-8-tablet.webp 1x, img/catalog/catalog-8-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/catalog/catalog-8-mobile.webp 1x, img/catalog/catalog-8-mobile@2x.webp 2x">
+              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-8-desktop.png 1x, img/catalog/catalog-8-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/catalog/catalog-8-tablet.png 1x, img/catalog/catalog-8-tablet@2x.png 2x">
+              <img src="img/catalog/catalog-8-mobile.png" srcset="img/catalog/catalog-8-mobile@2x.png 2x" width="260" height="386" alt="Группа людей идут по леднику">
+            </picture>
+            <h3>Круиз “Минион - 1“</h3>
+            <div class="catalog__wrapper">
+              <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <h4>Маршрут</h4>
+                  <p>Аргентина - Антарктида</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Порт отправления</h4>
+                  <p>Ушуайя</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Продолжительность</h4>
+                  <p>11 дней</p>
+                </li>
+                <li class="catalog__info-item">
+                  <h4>Цена</h4>
+                  <p>от&nbsp;12300&nbsp;$</p>
+                </li>
+              </ul>
+              <a href="#">Забронировать</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="booking" id="booking">
+        <div class="booking__wrapper">
+          <div class="booking__container">
+            <h2>Раннее бронирование</h2>
+            <p>Забронируйте тур <br> за&nbsp;3-6 месяцев до&nbsp;даты выезда <br> и сэкономьте до&nbsp;50%</p>
+          </div>
+          <form class="booking__form" action="https://echo.htmlacademy.ru/" method="get">
+            <h3 class="visually-hidden">Форма заявки</h3>
+            <p>Оставьте заявку <br> и мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            <div class="booking__group">
+              <h4 class="visually-hidden">Личные датнные</h4>
+              <ul class="booking__list">
+                <li class="booking__item">
+                  <label class="visually-hidden" for="name">Имя</label>
+                  <input type="text" id="name" name="name" placeholder="Имя" required>
+                </li>
+                <li class="booking__item">
+                  <label class="visually-hidden" for="phone">Телефон</label>
+                  <input type="tel" id="phone" name="phone" pattern="[8]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
+                </li>
+                <li class="booking__item">
+                  <label class="visually-hidden" for="email">Имейл</label>
+                  <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" required>
+                </li>
+              </ul>
+              <label class="booking__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="politics" id="politics" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Я согласен на&nbsp;обработку моих персональных данных</span>
+              </label>
+              <button class="booking__button" type="submit">Оставить заявку</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__wrapper">
+          <p>У вас ещё остались вопросы или сомнения?
+            Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+          <address>г.&nbsp;Санкт Петербург, ул. Большая Конюшенная, 19/8</address>
+          <a href="tel:88002000000">8-800-200-00-00</a>
+        </div>
+        <!-- <iframe class="contacts__iframe" src="https://www.google.com/maps/d/embed?mid=1Ba8B3SnMjv_63NZ-5F11jkghJFjsS34&ehbc=2E312F" width="290" height="316"></iframe> -->
+        <iframe title="Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1658862191645!5m2!1sru!2see" width="290" height="316" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+    
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="logo page-footer__logo">
+          <svg width="70" height="38" viewBox="0 0 70 38">
+            <use xlink:href="img/sprite_auto.svg#logo"></use>
+          </svg>
+        </a>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#advantages">Преимущества</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#catalog">Направления</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#booking">Ближайшие круизы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a href="#">
+              <svg class="social__fb" width="11" height="20" viewbox="0 0 11 20">
+                <use xlink:href="img/sprite_auto.svg#facebook"></use>
+              </svg>
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <svg class="social__instagram" width="20" height="20" viewbox="0 0 20 20">
+                <use xlink:href="img/sprite_auto.svg#instagram"></use>
+              </svg>
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#">
+              <svg class="social__twitter" width="19" height="16" viewbox="0 0 19 16">
+                <use xlink:href="img/sprite_auto.svg#twitter"></use>
+              </svg>
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
