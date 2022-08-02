@@ -1,25 +1,28 @@
 .page-footer {
     background-color: $color-text-blue;
+
+    margin-top: auto;
 }
 
 .page-footer__wrapper {
     width: 1160px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 41px 0;
 
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 
     color: $color-text-white;
     align-items: center;
 
     @media (max-width: 1365px) {
         width: 100%;
-        padding: 50px 45px;
+        padding: 33px 45px;
     }
 
     @media (max-width: 767px) {
+        padding: 40px 15px 23px;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -55,5 +58,11 @@
 .page-footer__social {
     @media (min-width: $vp-768) {
         margin-left: auto;
+        margin-top: 9px;
+        margin-right: -7px;
+    }
+
+    @media (max-width: 767px) {
+        margin-left: -10px;
     }
 }
