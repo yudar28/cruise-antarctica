@@ -1,0 +1,15 @@
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 43, 102, 0.5);
+
+    &--open {
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+}

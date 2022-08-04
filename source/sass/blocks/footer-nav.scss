@@ -21,7 +21,7 @@
 .footer-nav__item:not(:last-child) {
     margin-right: 33px;
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         margin-right: 23px;
     }
 }
@@ -38,7 +38,7 @@
         opacity: 0.5;
     }
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         font-size: 12px;
         line-height: 15px;
     }

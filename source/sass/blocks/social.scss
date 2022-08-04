@@ -16,7 +16,7 @@
 .social__item:not(:last-child) {
     margin-right: 3px;
 
-    @media (min-width: $vp-1366) {
+    @media (min-width: 1024px) {
         margin-right: 7px;
     }
 }
@@ -31,21 +31,21 @@
 }
 
 .social__fb {
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         width: 9px;
         height: 16px;
     }
 }
 
 .social__instagram {
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         width: 16px;
         height: 16px;
     }
 }
 
 .social__twitter {
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         width: 16px;
         height: 13px;
     }

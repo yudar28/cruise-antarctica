@@ -24,7 +24,7 @@
 
     list-style-type: none;
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         margin: 0;
         padding: 21px 0 29px;
     }
@@ -37,7 +37,7 @@
 .main-nav__item {
     margin-left: 33px;
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         margin-left: 23px;
     }
 
@@ -59,7 +59,7 @@
         opacity: 0.5;
     }
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         font-size: 14px;
         line-height: 17px;
     }

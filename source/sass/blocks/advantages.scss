@@ -5,13 +5,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (min-width: $vp-1366) {
+    @media (min-width: 1024px) {
         @media (min-resolution: 2dppx) {
             background-image: url("../img/bg-desktop@2x.jpg");
         }
     }
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         background-image: url("../img/bg-tablet.jpg");
 
         @media (min-resolution: 2dppx) {
@@ -34,6 +34,10 @@
     padding: 110px 0 120px;
 
     @media (max-width: 1365px) {
+        width: 84.91%;
+    }
+
+    @media (max-width: 1023px) {
         width: 100%;
         padding: 89px 45px 100px;
     }
@@ -52,7 +56,7 @@
     line-height: 150%;
     text-align: center;
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         margin-bottom: 50px;
         font-size: 26px;
     }
@@ -74,6 +78,9 @@
 
     @media (max-width: 1365px) {
         grid-template-columns: repeat(3, minmax(206px, 1fr));
+    }
+
+    @media (max-width: 1023px) {
         column-gap: 30px;
     }
 
@@ -89,7 +96,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         padding: 26px 18px 22px; 
     }
 
@@ -111,13 +118,13 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         height: 26px; 
     }
 }
 
 .advantages__svg {
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         &--ship {
             width: 21px;
             height: 26px; 

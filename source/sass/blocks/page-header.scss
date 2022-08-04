@@ -12,6 +12,10 @@
 
     @media (max-width: 1365px) {
         width: 100%;
+        padding: 0 103px;
+    }
+
+    @media (max-width: 1023px) {
         padding: 0 45px;
     }
 
@@ -33,17 +37,6 @@
     
             background-color: $color-text-white;
             overflow: auto;
-
-            &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: -35px;
-                width: 35px;
-                height: 100vh;
-                background: rgba(0, 43, 102, 0.5);
-                z-index: 3;
-            }
         }
 
         &--nojs {
@@ -83,7 +76,7 @@
         height: 22px;
     }
 
-    @media (max-width: 1365px) {
+    @media (max-width: 1023px) {
         width: 38px;
         height: 20px;
     }

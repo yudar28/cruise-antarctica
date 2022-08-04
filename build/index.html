@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
+    <div class="overlay"></div>
     <header class="page-header page-header--nojs">
         <a class="logo page-header__logo page-header__logo--nojs">
           <svg width="70" height="38" viewBox="0 0 70 38">
@@ -49,10 +50,10 @@
         <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
         <div class="about__picture">
           <picture>
-            <source type="image/webp" media="(min-width: 1366px)" srcset="img/penguins-desktop.webp 1x, img/penguins-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/penguins-desktop.webp 1x, img/penguins-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/penguins-tablet.webp 1x, img/penguins-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/penguins-mobile.webp 1x, img/penguins-mobile@2x.webp 2x">
-            <source media="(min-width: 1366px)" srcset="img/penguins-desktop.png 1x, img/penguins-desktop@2x.png 2x">
+            <source media="(min-width: 1024px)" srcset="img/penguins-desktop.png 1x, img/penguins-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/penguins-tablet.png 1x, img/penguins-tablet@2x.png 2x">
             <img src="img/penguins-mobile.png" srcset="img/penguins-mobile@2x.png 2x" width="560" height="301" alt="Три пингвина">
           </picture>
@@ -97,17 +98,19 @@
         <ul class="catalog__list">
           <li tabindex="0" class="catalog__item">
               <picture>
-                <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.webp 1x, img/catalog/catalog-1-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile@2x.webp 2x">
-                <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
+                <source media="(min-width: 1024px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
                 <img src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" width="260" height="386" alt="Айсберг и замерзшее море”">
               </picture>
               <h3>Круиз “Астория”</h3>
               <div class="catalog__wrapper">
                 <ul class="catalog__info-list">
-                  <div class="catalog__title">Круиз “Астория”</div>
+                  <li class="catalog__info-item">
+                    <div class="catalog__title">Круиз “Астория”</div>
+                  </li>
                   <li class="catalog__info-item">
                     <h4>Маршрут</h4>
                     <p>Аргентина - Фолклендские острова - Антарктида</p>
@@ -125,21 +128,24 @@
                     <p>от&nbsp;11500&nbsp;$</p>
                   </li>
                 </ul>
-                <a tabindex="0" href="#">Забронировать</a>
+                <a href="#">Забронировать</a>
               </div>
           </li>
           <li tabindex="0" class="catalog__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-1-desktop.webp 1x, img/catalog/catalog-1-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.webp 1x, img/catalog/catalog-1-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/catalog/catalog-1-mobile.webp 1x, img/catalog/catalog-1-mobile@2x.webp 2x">
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/catalog/catalog-1-desktop.png 1x, img/catalog/catalog-1-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/catalog-1-tablet.png 1x, img/catalog/catalog-1-tablet@2x.png 2x">
               <img src="img/catalog/catalog-1-mobile.png" srcset="img/catalog/catalog-1-mobile@2x.png 2x" width="260" height="386" alt="Айсберг и замерзшее море">
             </picture>
             <h3>Круиз “Элайн”</h3>
             <div class="catalog__wrapper">
               <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <div class="catalog__title">Круиз “Элайн”</div>
+                </li>
                 <li class="catalog__info-item">
                   <h4>Маршрут</h4>
                   <p>Аргентина - Фолклендские острова - Антарктида - Чили</p>
@@ -162,16 +168,19 @@
           </li>
           <li tabindex="0" class="catalog__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-3-desktop.webp 1x, img/catalog/catalog-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-3-desktop.webp 1x, img/catalog/catalog-3-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.webp 1x, img/catalog/catalog-3-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/catalog/catalog-3-mobile.webp 1x, img/catalog/catalog-3-mobile@2x.webp 2x">
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-3-desktop.png 1x, img/catalog/catalog-3-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/catalog/catalog-3-desktop.png 1x, img/catalog/catalog-3-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/catalog-3-tablet.png 1x, img/catalog/catalog-3-tablet@2x.png 2x">
               <img src="img/catalog/catalog-3-mobile.png" srcset="img/catalog/catalog-3-mobile@2x.png 2x" width="260" height="386" alt="Небольшие айсберги, плавающие в море">
             </picture>
             <h3>Круиз “Атлантис“</h3>
             <div class="catalog__wrapper">
               <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <div class="catalog__title">Круиз “Атлантис“</div>
+                </li>
                 <li class="catalog__info-item">
                   <h4>Маршрут</h4>
                   <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
@@ -194,16 +203,19 @@
           </li>
           <li tabindex="0" class="catalog__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-4-desktop.webp 1x, img/catalog/catalog-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-4-desktop.webp 1x, img/catalog/catalog-4-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.webp 1x, img/catalog/catalog-4-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/catalog/catalog-4-mobile.webp 1x, img/catalog/catalog-4-mobile@2x.webp 2x">
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-4-desktop.png 1x, img/catalog/catalog-4-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/catalog/catalog-4-desktop.png 1x, img/catalog/catalog-4-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/catalog-4-tablet.png 1x, img/catalog/catalog-4-tablet@2x.png 2x">
               <img src="img/catalog/catalog-4-mobile.png" srcset="img/catalog/catalog-4-mobile@2x.png 2x" width="260" height="386" alt="Большой ледник на фоне голубого неба с перистыми облаками">
             </picture>
             <h3>Круиз “Одиссей“</h3>
             <div class="catalog__wrapper">
               <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <div class="catalog__title">Круиз “Одиссей“</div>
+                </li>
                 <li class="catalog__info-item">
                   <h4>Маршрут</h4>
                   <p>Чили - Антарктида</p>
@@ -226,16 +238,19 @@
           </li>
           <li tabindex="0" class="catalog__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-5-desktop.webp 1x, img/catalog/catalog-5-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-5-desktop.webp 1x, img/catalog/catalog-5-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.webp 1x, img/catalog/catalog-5-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/catalog/catalog-5-mobile.webp 1x, img/catalog/catalog-5-mobile@2x.webp 2x">
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-5-desktop.png 1x, img/catalog/catalog-5-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/catalog/catalog-5-desktop.png 1x, img/catalog/catalog-5-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/catalog-5-tablet.png 1x, img/catalog/catalog-5-tablet@2x.png 2x">
               <img src="img/catalog/catalog-5-mobile.png" srcset="img/catalog/catalog-5-mobile@2x.png 2x" width="260" height="386" alt="Стая пингвинов на фоне айсберга">
             </picture>
             <h3>Круиз “Олимпия“</h3>
             <div class="catalog__wrapper">
               <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <div class="catalog__title">Круиз “Олимпия“</div>
+                </li>
                 <li class="catalog__info-item">
                   <h4>Маршрут</h4>
                   <p>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</p>
@@ -258,16 +273,19 @@
           </li>
           <li tabindex="0" class="catalog__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-6-desktop.webp 1x, img/catalog/catalog-6-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-6-desktop.webp 1x, img/catalog/catalog-6-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-6-tablet.webp 1x, img/catalog/catalog-6-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/catalog/catalog-6-mobile.webp 1x, img/catalog/catalog-6-mobile@2x.webp 2x">
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-6-desktop.png 1x, img/catalog/catalog-6-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/catalog/catalog-6-desktop.png 1x, img/catalog/catalog-6-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/catalog-6-tablet.png 1x, img/catalog/catalog-6-tablet@2x.png 2x">
               <img src="img/catalog/catalog-6-mobile.png" srcset="img/catalog/catalog-6-mobile@2x.png 2x" width="260" height="386" alt="Расстаявшая часть ледника и море">
             </picture>
             <h3>Круиз “Аврора“</h3>
             <div class="catalog__wrapper">
               <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <div class="catalog__title">Круиз “Аврора“</div>
+                </li>
                 <li class="catalog__info-item">
                   <h4>Маршрут</h4>
                   <p>Аргентина - Антарктида - Чили</p>
@@ -290,16 +308,19 @@
           </li>
           <li tabindex="0" class="catalog__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-7-desktop.webp 1x, img/catalog/catalog-7-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-7-desktop.webp 1x, img/catalog/catalog-7-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-7-tablet.webp 1x, img/catalog/catalog-7-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/catalog/catalog-7-mobile.webp 1x, img/catalog/catalog-7-mobile@2x.webp 2x">
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-7-desktop.png 1x, img/catalog/catalog-7-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/catalog/catalog-7-desktop.png 1x, img/catalog/catalog-7-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/catalog-7-tablet.png 1x, img/catalog/catalog-7-tablet@2x.png 2x">
               <img src="img/catalog/catalog-7-mobile.png" srcset="img/catalog/catalog-7-mobile@2x.png 2x" width="260" height="386" alt="Парусная лодка в море около ледника">
             </picture>
             <h3>Круиз “Леонор“</h3>
             <div class="catalog__wrapper">
               <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <div class="catalog__title">Круиз “Леонор“</div>
+                </li>
                 <li class="catalog__info-item">
                   <h4>Маршрут</h4>
                   <p>Чили - Южная Георгия - Антарктида - Аргентина</p>
@@ -322,16 +343,19 @@
           </li>
           <li tabindex="0" class="catalog__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1366px)" srcset="img/catalog/catalog-8-desktop.webp 1x, img/catalog/catalog-8-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog/catalog-8-desktop.webp 1x, img/catalog/catalog-8-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-8-tablet.webp 1x, img/catalog/catalog-8-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/catalog/catalog-8-mobile.webp 1x, img/catalog/catalog-8-mobile@2x.webp 2x">
-              <source media="(min-width: 1366px)" srcset="img/catalog/catalog-8-desktop.png 1x, img/catalog/catalog-8-desktop@2x.png 2x">
+              <source media="(min-width: 1024px)" srcset="img/catalog/catalog-8-desktop.png 1x, img/catalog/catalog-8-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/catalog/catalog-8-tablet.png 1x, img/catalog/catalog-8-tablet@2x.png 2x">
               <img src="img/catalog/catalog-8-mobile.png" srcset="img/catalog/catalog-8-mobile@2x.png 2x" width="260" height="386" alt="Группа людей идут по леднику">
             </picture>
             <h3>Круиз “Минион - 1“</h3>
             <div class="catalog__wrapper">
               <ul class="catalog__info-list">
+                <li class="catalog__info-item">
+                  <div class="catalog__title">Круиз “Минион - 1“</div>
+                </li>
                 <li class="catalog__info-item">
                   <h4>Маршрут</h4>
                   <p>Аргентина - Антарктида</p>

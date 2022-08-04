@@ -26,6 +26,7 @@ let header = document.querySelector('.page-header');
 let logo = document.querySelector('.page-header__logo');
 let body = document.querySelector('.page-body');
 let navItems = document.querySelectorAll('.main-nav__link-js');
+let overlay = document.querySelector('.overlay');
 
 navButton.classList.remove('page-header__toggle--nojs');
 navMain.classList.remove('main-nav--nojs');
@@ -38,6 +39,7 @@ const onMenuOpen = () => {
   header.classList.toggle('page-header--open');
   logo.classList.toggle('page-header__logo--open');
   body.classList.toggle('page-body--opened-menu');
+  overlay.classList.toggle('overlay--open');
 }
 
 const onMenuClose = () => {
@@ -46,6 +48,7 @@ const onMenuClose = () => {
   header.classList.remove('page-header--open');
   logo.classList.remove('page-header__logo--open');
   body.classList.remove('page-body--opened-menu');
+  overlay.classList.remove('overlay--open');
 }
 
 navButton.addEventListener('click', () => {
