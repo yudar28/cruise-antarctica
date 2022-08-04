@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
         <a class="logo page-header__logo page-header__logo--nojs">
           <svg width="70" height="38" viewBox="0 0 70 38">
             <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -107,6 +107,7 @@
               <h3>Круиз “Астория”</h3>
               <div class="catalog__wrapper">
                 <ul class="catalog__info-list">
+                  <div class="catalog__title">Круиз “Астория”</div>
                   <li class="catalog__info-item">
                     <h4>Маршрут</h4>
                     <p>Аргентина - Фолклендские острова - Антарктида</p>
@@ -371,11 +372,11 @@
                 </li>
                 <li class="booking__item">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input type="tel" id="phone" name="phone" pattern="[8]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Телефон" required>
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{1,30}" title="Введите телефон в формате 88008888888" placeholder="Телефон" required>
                 </li>
                 <li class="booking__item">
                   <label class="visually-hidden" for="email">Имейл</label>
-                  <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email" required>
+                  <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Введите email в формате aaa@aaaaa.aa" placeholder="Email" required>
                 </li>
               </ul>
               <label class="booking__control control">

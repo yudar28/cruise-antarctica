@@ -32,6 +32,22 @@
             width: calc(100% - 35px);
     
             background-color: $color-text-white;
+            overflow: auto;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -35px;
+                width: 35px;
+                height: 100vh;
+                background: rgba(0, 43, 102, 0.5);
+                z-index: 3;
+            }
+        }
+
+        &--nojs {
+            position: static;
         }
     }
 }
@@ -39,17 +55,6 @@
 .page-header--open .page-header__main-nav {
     @media (max-width: 767px) {
         align-self: start;
-
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -35px;
-            width: 35px;
-            height: 100vh;
-            background: rgba(0, 43, 102, 0.5);
-            z-index: 0;
-        }
     }
 }
 

@@ -739,7 +739,7 @@ button,
 
 .main-nav__list {
   margin: 0;
-  padding: 0;
+  padding: 36px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,7 +753,7 @@ button,
 }
 
 .main-nav__item a {
-  padding: 46px 0;
+  padding: 10px 0;
   display: block;
   font-size: 16px;
   line-height: 20px;
@@ -1355,6 +1355,10 @@ button,
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 2.5L5.28571 7L11 1' stroke='%23101A56'/%3E%3C/svg%3E%0A");
 }
 
+.control__input:focus ~ .control__mark {
+  outline: 3px solid #005fcc;
+}
+
 .contacts {
   width: 1160px;
   margin: 0 auto;
@@ -1541,6 +1545,7 @@ button,
 
   .main-nav__list {
     margin: 0;
+    padding: 21px 0 29px;
   }
 
   .main-nav__item {
@@ -1548,7 +1553,6 @@ button,
   }
 
   .main-nav__item a {
-    padding: 31px 0 38px;
     font-size: 14px;
     line-height: 17px;
   }
@@ -1786,15 +1790,10 @@ button,
     grid-template-rows: 63px 1fr;
     width: calc(100% - 35px);
     background-color: #f9fbfd;
+    overflow: auto;
   }
 
-  .page-header--open .page-header__main-nav {
-    -ms-flex-item-align: start;
-    -ms-grid-row-align: start;
-    align-self: start;
-  }
-
-  .page-header--open .page-header__main-nav::after {
+  .page-header--open::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1802,7 +1801,17 @@ button,
     width: 35px;
     height: 100vh;
     background: rgba(0, 43, 102, 0.5);
-    z-index: 0;
+    z-index: 3;
+  }
+
+  .page-header--nojs {
+    position: static;
+  }
+
+  .page-header--open .page-header__main-nav {
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
   }
 
   .page-header__logo {
@@ -2018,7 +2027,7 @@ button,
 
   .catalog__wrapper a {
     left: 25px;
-    width: calc(100% - 60px);
+    width: calc(100% - 50px);
   }
 
   .booking {

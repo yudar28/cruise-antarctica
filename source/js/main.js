@@ -30,6 +30,7 @@ let navItems = document.querySelectorAll('.main-nav__link-js');
 navButton.classList.remove('page-header__toggle--nojs');
 navMain.classList.remove('main-nav--nojs');
 logo.classList.remove('page-header__logo--nojs');
+header.classList.remove('page-header--nojs');
 
 const onMenuOpen = () => {
   navMain.classList.toggle('main-nav--open');
@@ -56,6 +57,37 @@ navItems.forEach((navItem) => {
     onMenuClose();
   })
 });
+
+document.addEventListener( 'click', (e) => {
+  const withinBoundaries = e.composedPath().includes(header);
+
+  if ( ! withinBoundaries ) {
+    onMenuClose();
+  }
+});
+
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+document.addEventListener('keydown', function(e) {
+  if( isEscapeKey ){ 
+    onMenuClose();
+	}
+});
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
 
 // ---------------------------------

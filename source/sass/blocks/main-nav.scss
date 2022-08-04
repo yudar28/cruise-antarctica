@@ -18,7 +18,7 @@
 
 .main-nav__list {
     margin: 0;
-    padding: 0;
+    padding: 36px 0;
     display: flex;
     flex-wrap: wrap;
 
@@ -26,6 +26,7 @@
 
     @media (max-width: 1365px) {
         margin: 0;
+        padding: 21px 0 29px;
     }
 
     @media (max-width: 767px) {
@@ -46,8 +47,7 @@
 }
 
 .main-nav__item a {
-    padding: 46px 0;
-
+    padding: 10px 0;
     display: block;
     font-size: 16px;
     line-height: 20px;
@@ -60,8 +60,6 @@
     }
 
     @media (max-width: 1365px) {
-        padding: 31px 0 38px;
-
         font-size: 14px;
         line-height: 17px;
     }
