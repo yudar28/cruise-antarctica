@@ -92,16 +92,6 @@ for (let anchor of anchors) {
   })
 }
 
-let catalogItems = document.querySelectorAll('.catalog__item');
-
-catalogItems.forEach((catalogItem) => {
-  catalogItem.addEventListener('focus', (event) => {
-    // console.log(event.currentTarget);
-    // console.log(event.currentTarget.querySelector('.catalog__wrapper a'));
-    // event.currentTarget.querySelector('.catalog__wrapper').mouseover()
-  })
-});
-
 
 
 
