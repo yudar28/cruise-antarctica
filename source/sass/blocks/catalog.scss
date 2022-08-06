@@ -128,14 +128,14 @@
     color: $color-text-white;
 }
 
-.catalog__item:focus .catalog__wrapper,
+.catalog__item:focus-within .catalog__wrapper,
 .catalog__item:hover .catalog__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.catalog__item:focus h3,
+.catalog__item:focus-within h3,
 .catalog__item:hover h3 {
     display: none;
 }

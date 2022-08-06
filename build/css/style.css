@@ -1059,7 +1059,7 @@ button,
   color: #f9fbfd;
 }
 
-.catalog__item:focus .catalog__wrapper,
+.catalog__item:focus-within .catalog__wrapper,
 .catalog__item:hover .catalog__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,7 +1073,7 @@ button,
   justify-content: space-between;
 }
 
-.catalog__item:focus h3,
+.catalog__item:focus-within h3,
 .catalog__item:hover h3 {
   display: none;
 }
