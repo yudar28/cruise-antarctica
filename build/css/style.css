@@ -673,6 +673,13 @@ button,
   align-items: center;
 }
 
+.page-header__logo {
+  padding-top: 35px;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
 .page-header__logo--open,
 .page-header__logo--nojs {
   display: block;
@@ -796,16 +803,28 @@ button,
 
 .page-footer__logo {
   margin-right: 40px;
+  padding-top: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.page-footer__social {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .footer-nav {
+  margin-top: 3px;
   color: #f9fbfd;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .footer-nav__list {
@@ -836,14 +855,16 @@ button,
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40px)[3];
+  grid-template-columns: repeat(3, 40px);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 
 .social__item {
@@ -855,13 +876,9 @@ button,
   align-items: flex-end;
 }
 
-.social__item:not(:last-child) {
-  margin-right: 3px;
-}
-
 .social__item a {
   display: block;
-  padding: 10px;
+  padding: 10px 8px;
 }
 
 .social__item a:hover {
@@ -947,6 +964,7 @@ button,
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
+  row-gap: 40px;
 }
 
 .advantages__item {
@@ -1307,6 +1325,8 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   border: none;
+  -webkit-appearance: none;
+  background-color: #f9fbfd;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
@@ -1429,6 +1449,7 @@ button,
 
 .contacts__wrapper a {
   margin-bottom: 41px;
+  padding-right: 70px;
   display: inline-block;
 }
 
@@ -1446,6 +1467,8 @@ button,
   background-repeat: no-repeat;
   background-size: contain;
   grid-area: map;
+  -ms-grid-row-align: start;
+  align-self: start;
 }
 
 .overlay {
@@ -1510,10 +1533,6 @@ button,
 }
 
 @media (min-width: 1024px) {
-  .social__item:not(:last-child) {
-    margin-right: 7px;
-  }
-
   .booking__container h2 {
     margin-bottom: 9px;
     padding-left: 60px;
@@ -1611,6 +1630,10 @@ button,
     padding: 0 45px;
   }
 
+  .page-header__logo {
+    padding-top: 30px;
+  }
+
   .page-header__logo svg {
     width: 38px;
     height: 20px;
@@ -1664,6 +1687,7 @@ button,
 
   .page-footer__logo {
     margin-right: 25px;
+    padding-top: 17px;
   }
 
   .page-footer__logo svg {
@@ -1678,6 +1702,11 @@ button,
   .footer-nav__item a {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .social {
+    -ms-grid-columns: (35px)[3];
+    grid-template-columns: repeat(3, 35px);
   }
 
   .social__fb {
@@ -1740,6 +1769,7 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+    row-gap: 30px;
   }
 
   .advantages__item {
@@ -1981,6 +2011,7 @@ button,
 
   .page-footer__logo {
     margin-right: 0;
+    padding-top: 0;
     display: block;
   }
 
@@ -1991,6 +2022,10 @@ button,
 
   .page-footer__social {
     margin-left: -10px;
+  }
+
+  .footer-nav {
+    margin-top: 0;
   }
 
   .footer-nav__list {
@@ -2097,7 +2132,7 @@ button,
 
   .booking__form {
     padding: 34px 30px 40px;
-    width: 290px;
+    width: 100%;
   }
 
   .booking__form p {

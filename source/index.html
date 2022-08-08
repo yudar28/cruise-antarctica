@@ -396,7 +396,7 @@
                 </li>
                 <li class="booking__item">
                   <label class="visually-hidden" for="phone">Телефон</label>
-                  <input type="tel" id="phone" name="phone" pattern="[0-9]{1,30}" title="Введите телефон в формате 88008888888" placeholder="Телефон" required>
+                  <input type="tel" id="phone" name="phone" pattern="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){2,12}\d$" title="Введите телефон в формате 88008888888" placeholder="Телефон" required>
                 </li>
                 <li class="booking__item">
                   <label class="visually-hidden" for="email">Имейл</label>

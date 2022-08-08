@@ -133,7 +133,7 @@
 
     @media (max-width: 767px) {
         padding: 34px 30px 40px;
-        width: 290px;
+        width: 100%;
     }
 }
 
@@ -226,6 +226,8 @@
     justify-content: center;
 
     border: none;
+    -webkit-appearance: none;
+    background-color: $color-text-white;
 
     font-weight: 600;
     font-size: 14px;

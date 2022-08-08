@@ -1,5 +1,11 @@
 .footer-nav {
+    margin-top: 3px;
     color: $color-text-white;
+    align-self: start;
+
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
 }
 
 .footer-nav__list {

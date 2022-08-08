@@ -89,6 +89,7 @@
 
 .contacts__wrapper a {
     margin-bottom: 41px;
+    padding-right: 70px;
     display: inline-block;
 
     &::before {
@@ -106,6 +107,7 @@
     background-size: contain;
 
     grid-area: map;
+    align-self: start;
 
     @media (max-width: 1365px) {
         height: 335px;

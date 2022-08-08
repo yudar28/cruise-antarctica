@@ -52,6 +52,8 @@
 }
 
 .page-header__logo {
+    padding-top: 35px;
+    align-self: start;
 
     &--open,
     &--nojs {
@@ -63,6 +65,10 @@
         background-image: url("../img/svg/logo-blue.svg");
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    @media (max-width: 1023px) {
+        padding-top: 30px;
     }
 
     @media (max-width: 767px) {
